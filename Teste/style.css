@@ -1,0 +1,162 @@
+﻿@import url("https://mondrian.claro.com.br/tokens/claro-tokens-latest.custom-properties.css");
+
+:root {
+    --header-size-mobile: 75px; 
+    --footer-size-mobile: 220px; 
+    --header-size-desktop: 87px; 
+    --footer-size-desktop: 144px; 
+}
+
+.lpMigration {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.text-topo .p-desk{
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    top: 115px;
+    left: 145px;
+    display: block;
+}
+
+.lpMigration .text-topo .mdn-Text{
+    font-size: var(--font-size-xs);
+    line-height: var(--font-size-lg);
+}
+
+.lpMigration .migrationHeader {}
+
+.lpMigration .migrationFooter {
+    width: 100%;
+}
+
+.lpMigration .top {
+    position: relative;
+}
+
+
+.lpMigration .content .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 100%;
+}
+
+.lpMigration .content .image img {
+    height: auto;
+    width: -webkit-fill-available;
+    display: none;
+}
+
+.lpMigration .callToAction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-stack-xs);
+    gap: var(--spacing-stack-xxs);
+    background-color: #fff;
+    border: var(--color-brand-primary-medium) 1px solid;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.lpMigration .callToAction .mdn-Text{
+    font-size: var(--font-size-xs);
+    line-height: var(--font-size-lg);
+}
+
+
+
+
+@media screen and (max-width: 389px){
+    .lpMigration .content .image.smallMobile img {
+        display: block;
+    }
+
+    .text-topo .p-desk{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px){
+    .lpMigration .content .image.largeMobile img {
+        display: block;
+    }
+
+    .text-topo .p-desk{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .lpMigration .content .image.tablet img {
+        display: block;
+    }
+
+      .text-topo .p-desk{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px){
+
+
+    .lpMigration .content .image.desktop img {
+        display: block;
+    }
+
+    .lpMigration .callToAction {
+        position: absolute;
+        bottom: 75px;
+        left: 460px;
+        background-color: transparent;
+        border: none;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lpMigration .callToAction p {
+        max-width: 300px;
+        font-size: var(--font-size-md) !important;
+        line-height: 40px !important;
+    }
+
+    .lpMigration .text-topo p {
+        max-width: 365px;
+        font-size: var(--font-size-md) !important;
+        line-height: 40px !important;
+    }
+
+    .p-mob{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 1580px){
+    .lpMigration .content .image.desktop img {
+        max-width: %;
+    }
+
+    .lpMigration .callToAction {
+       left: 670px;
+    }
+
+    .text-topo .p-desk{
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        top: 115px;
+        left: 260px;
+        display: block;
+    }
+
+ 
+}
